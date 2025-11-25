@@ -27,7 +27,7 @@ class MovieViewModel @Inject constructor(val useCase: SearchMovieUsecase) : View
     }
 
     fun searchMovies(query: String) {
-        if (query.isNullOrEmpty()) {
+        if (query.isEmpty()) {
             _uiState.value = UiState.Success(emptyList())
             return
         }
