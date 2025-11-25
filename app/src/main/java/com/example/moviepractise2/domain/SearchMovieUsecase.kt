@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class SearchMovieUsecase @Inject constructor (val repo : MovieRepo ){
 
-    operator fun invoke(query: String) : Flow<List<Movie>>{
-        return repo.searchMovies(query)
+    operator fun invoke(query3: String) : Flow<List<Movie>>{
+        return repo.searchMovies(query3)
     }
 }
