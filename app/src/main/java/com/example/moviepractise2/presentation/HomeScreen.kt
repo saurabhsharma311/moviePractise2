@@ -39,7 +39,7 @@ fun HomeScreen(viewModel: MovieViewModel = hiltViewModel()) {
         OutlinedTextField(
             value = query,
             onValueChange = { viewModel.onQueryChanged(it) },   // ✅ correct smart usage
-            label = { Text("Search movies") },
+            label = { Text("Search Characters") },
             modifier = Modifier.fillMaxWidth()
         )
 
